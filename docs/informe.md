@@ -83,8 +83,4 @@ El repositorio local conserva la versión inicial y la versión refactorizada. S
 
 ## Anexo A. Uso de inteligencia artificial
 
-Se utilizó ChatGPT como apoyo para organizar el informe, considerar alternativas de estructura y revisar la redacción. La herramienta no reemplaza la autoría ni la defensa: quienes presentan deben revisar el código, comprender las decisiones y poder explicarlas. Se recomienda adjuntar a la entrega el intercambio relevante con la herramienta, según lo pide la consigna. No se atribuyen análisis a herramientas que no se ejecutaron ni se inventan resultados de pruebas.
-
-## Anexo B. Evidencias para completar
-
-Para la entrega oral, agregar capturas auténticas de: (1) ejecución de la suite unittest, (2) alta y listado desde consola, (3) repositorio con las versiones inicial y refactorizada, y (4) historial de commits. También completar nombres de integrantes y fecha de entrega. La salida real de pruebas y comandos está en docs/evidencia-ejecucion.txt; las capturas de pantalla quedan como tarea del grupo.
+Se usó ChatGPT para estructurar el informe, revisar alternativas y mejorar la redacción. El grupo debe validar las decisiones, anexar el intercambio relevante y poder defender el trabajo. Antes de entregar, completar nombres y fecha, agregar capturas reales de consola, pruebas y commits, y grabar la defensa con cámara y voz propia.
