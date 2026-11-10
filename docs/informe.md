@@ -3,8 +3,8 @@
 ### Gestión de Solicitudes Académicas
 
 Metodología de Sistemas II · Tecnicatura Universitaria en Programación a Distancia · UTN
-Integrantes: completar con nombres del grupo
-Fecha: 10 de noviembre de 2026
+Integrantes: Juan Galati
+Fecha: 8 de noviembre de 2026
 
 > Prototipo didáctico con información ficticia. No es un sistema institucional ni debe utilizarse para gestionar trámites reales.
 
@@ -87,3 +87,4 @@ Se usó ChatGPT para estructurar el informe, revisar alternativas y mejorar la r
 
 
 **Anexo B - evidencia registrada.** La ejecución real de unittest terminó con Ran 8 tests in 0.034s y OK. La demo creó y actualizó una solicitud ficticia hasta en_revision; el resumen dio total 1. El historial contiene commits por etapa y los seis tags están en el bundle. La salida completa está en docs/evidencia-ejecucion.txt. Se adjuntan dos capturas reales: tests e historial Git, y demo del sistema.
+
