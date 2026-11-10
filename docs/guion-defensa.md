@@ -88,15 +88,14 @@ Mostrar el historial con:
 
 “Usamos ChatGPT como apoyo para ordenar el informe y revisar la redacción. Revisamos el material y podemos explicar las decisiones. Gracias.”
 
-## 4. Cómo tomar las capturas para el anexo
+## 4. Capturas ya preparadas para el anexo
 
-Las capturas deben salir de la ejecución real en su computadora. Abran Recortes o la herramienta de captura de Windows y guarden tres PNG, procurando que se vean el comando, la salida y la carpeta o repositorio correctos.
+Ya se agregaron al informe dos capturas reales que compartió el grupo:
 
-1. **Pruebas:** ejecuten python -m unittest discover -s tests -v. Capturen desde el primer test hasta Ran 8 tests y OK. Guarden como Anexo_01_tests.png.
-2. **Consola:** ejecuten los cinco comandos de demostración. Capturen el alta, el cambio a en_revision y el resumen. Guarden como Anexo_02_demo.png.
-3. **Git:** ejecuten git log --oneline --decorate --all -10 y git tag --list. Capturen los commits por etapa y los seis tags. Guarden como Anexo_03_git.png. Si no caben juntos, hagan dos capturas.
+- Anexo_01_tests_git.png: muestra las ocho pruebas aprobadas, los commits y los tags.
+- Anexo_02_demo.png: muestra el alta, listado, asignación, transición a en_revision y reporte.
 
-Luego adjunten esas imágenes aquí. Con los archivos PNG puedo insertarlas en el PDF final con sus pies de imagen. No recreen la consola en un editor: la cátedra pidió capturas reales.
+No hace falta volver a capturarlas, salvo que la cátedra pida una captura separada para cada punto. En el video sí conviene ejecutar las pruebas y mostrar brevemente el historial.
 
 ## 5. Revisión antes de entregar el video
 
