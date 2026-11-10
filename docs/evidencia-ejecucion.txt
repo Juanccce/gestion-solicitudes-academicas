@@ -1,0 +1,34 @@
+{
+  "tests": {
+    "code": 0,
+    "out": "",
+    "err": "test_alta_persistencia (test_solicitudes.ServicioTests.test_alta_persistencia) ... ok\r\ntest_asignacion_y_transicion (test_solicitudes.ServicioTests.test_asignacion_y_transicion) ... ok\r\ntest_campos_vacios (test_solicitudes.ServicioTests.test_campos_vacios) ... ok\r\ntest_estado_invalido (test_solicitudes.ServicioTests.test_estado_invalido) ... ok\r\ntest_filtro_tipo_sin_distinguir_mayusculas (test_solicitudes.ServicioTests.test_filtro_tipo_sin_distinguir_mayusculas) ... ok\r\ntest_id_inexistente (test_solicitudes.ServicioTests.test_id_inexistente) ... ok\r\ntest_prioridad_invalida (test_solicitudes.ServicioTests.test_prioridad_invalida) ... ok\r\ntest_resumen (test_solicitudes.ServicioTests.test_resumen) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 8 tests in 0.048s\r\n\r\nOK\r\n"
+  },
+  "demo": [
+    {
+      "code": 0,
+      "out": "Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='', estado='pendiente')\r\n",
+      "err": ""
+    },
+    {
+      "code": 0,
+      "out": "[Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='', estado='pendiente')]\r\n",
+      "err": ""
+    },
+    {
+      "code": 0,
+      "out": "Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='Mesa', estado='pendiente')\r\n",
+      "err": ""
+    },
+    {
+      "code": 0,
+      "out": "Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='Mesa', estado='en_revision')\r\n",
+      "err": ""
+    },
+    {
+      "code": 0,
+      "out": "{'en_revision': 1, 'pendiente': 0, 'resuelta': 0, 'total': 1}\r\n",
+      "err": ""
+    }
+  ]
+}
