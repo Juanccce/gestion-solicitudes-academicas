@@ -79,7 +79,7 @@ JSON es una elección razonable para este ejemplo, no una recomendación para un
 
 ## 9. Repositorio y trazabilidad
 
-El repositorio local conserva la versión inicial y la versión refactorizada. Se agregaron los tags estado-inicial y estado-refactorizado para ubicar ambos extremos, junto con etapa-diagnostico, etapa-refactoring, etapa-pruebas y etapa-docs para recorrer los hitos. El historial está organizado en commits separados. Para publicarlo en GitHub, el equipo debe crear el repositorio remoto y subir main y los tags; esta copia no se publicó en una cuenta externa.
+El proyecto está publicado en GitHub: https://github.com/Juanccce/gestion-solicitudes-academicas. La rama main conserva los commits por etapa y se publicaron los tags estado-inicial, estado-refactorizado, etapa-diagnostico, etapa-refactoring, etapa-pruebas y etapa-docs. El historial permite recorrer el diagnóstico, las mejoras, las pruebas y la documentación.
 
 ## Anexo A. Uso de inteligencia artificial
 

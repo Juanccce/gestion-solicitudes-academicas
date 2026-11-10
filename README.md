@@ -18,8 +18,4 @@ La versión deliberadamente problemática está en baseline/legacy_app.py; la me
 
 ## Historial y tags
 
-El repositorio trae commits por etapa y los tags estado-inicial, estado-refactorizado, etapa-diagnostico, etapa-refactoring, etapa-pruebas y etapa-docs. Para publicarlo en un repositorio remoto propio:
-
-    git remote add origin URL_DEL_REPOSITORIO
-    git push -u origin main
-    git push origin --tags
+El repositorio está publicado en https://github.com/Juanccce/gestion-solicitudes-academicas. Incluye commits por etapa y los tags estado-inicial, estado-refactorizado, etapa-diagnostico, etapa-refactoring, etapa-pruebas y etapa-docs.
