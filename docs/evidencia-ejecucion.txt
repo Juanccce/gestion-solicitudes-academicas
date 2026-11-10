@@ -43,3 +43,5 @@ etapa-diagnostico
 etapa-docs
 etapa-pruebas
 etapa-refactoring
+
+CAPTURA ANEXADA: docs/evidencias/Anexo_01_tests_git.png (captura original) y docs/evidencias/Anexo_01_tests_git_recorte.png (recorte para lectura en PDF).
