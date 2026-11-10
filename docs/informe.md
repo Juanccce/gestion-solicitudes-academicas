@@ -83,7 +83,7 @@ El proyecto está publicado en GitHub: https://github.com/Juanccce/gestion-solic
 
 ## Anexo A. Uso de inteligencia artificial
 
-Se usó ChatGPT para estructurar el informe, revisar alternativas y mejorar la redacción. El grupo debe validar las decisiones y poder defender el trabajo. El informe incluye capturas de consola, pruebas y commits; la defensa se grabó con cámara y voz propia. Se conserva evidencia del intercambio con IA en la documentación del proyecto.
+Se usó ChatGPT para estructurar el informe, revisar alternativas y mejorar la redacción. El grupo debe validar las decisiones y poder defender el trabajo. Se adjuntan capturas de consola, pruebas y commits, y la defensa se grabó con cámara y voz propia. El uso de IA está declarado en docs/uso-ia.md.
 
 
 **Anexo B - evidencia registrada.** La ejecución real de unittest terminó con Ran 8 tests in 0.034s y OK. La demo creó y actualizó una solicitud ficticia hasta en_revision; el resumen dio total 1. El historial contiene commits por etapa y los seis tags están en el bundle. La salida completa está en docs/evidencia-ejecucion.txt. Se adjuntan dos capturas reales: tests e historial Git, y demo del sistema.
