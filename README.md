@@ -15,3 +15,11 @@ Python 3.10+, sin dependencias externas.
 La primera ejecución crea data/solicitudes.json. No usar datos personales reales.
 
 La versión deliberadamente problemática está en baseline/legacy_app.py; la mejorada, en src/solicitudes/. El informe completo está en docs/informe.md.
+
+## Historial y tags
+
+El repositorio trae commits por etapa y los tags estado-inicial, estado-refactorizado, etapa-diagnostico, etapa-refactoring, etapa-pruebas y etapa-docs. Para publicarlo en un repositorio remoto propio:
+
+    git remote add origin URL_DEL_REPOSITORIO
+    git push -u origin main
+    git push origin --tags

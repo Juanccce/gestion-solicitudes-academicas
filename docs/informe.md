@@ -77,6 +77,10 @@ La mejora principal fue hacer más claro dónde vive cada decisión. Separar per
 
 JSON es una elección razonable para este ejemplo, no una recomendación para un sistema universitario real. Si el sistema tuviera varios usuarios o necesitara rastrear quién hizo cada cambio, habría que revisar la arquitectura antes de ampliarlo.
 
+## 9. Repositorio y trazabilidad
+
+El repositorio local conserva la versión inicial y la versión refactorizada. Se agregaron los tags estado-inicial y estado-refactorizado para ubicar ambos extremos, junto con etapa-diagnostico, etapa-refactoring, etapa-pruebas y etapa-docs para recorrer los hitos. El historial está organizado en commits separados. Para publicarlo en GitHub, el equipo debe crear el repositorio remoto y subir main y los tags; esta copia no se publicó en una cuenta externa.
+
 ## Anexo A. Uso de inteligencia artificial
 
 Se utilizó ChatGPT como apoyo para organizar el informe, considerar alternativas de estructura y revisar la redacción. La herramienta no reemplaza la autoría ni la defensa: quienes presentan deben revisar el código, comprender las decisiones y poder explicarlas. Se recomienda adjuntar a la entrega el intercambio relevante con la herramienta, según lo pide la consigna. No se atribuyen análisis a herramientas que no se ejecutaron ni se inventan resultados de pruebas.
