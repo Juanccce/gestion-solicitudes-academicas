@@ -1,34 +1,45 @@
-{
-  "tests": {
-    "code": 0,
-    "out": "",
-    "err": "test_alta_persistencia (test_solicitudes.ServicioTests.test_alta_persistencia) ... ok\r\ntest_asignacion_y_transicion (test_solicitudes.ServicioTests.test_asignacion_y_transicion) ... ok\r\ntest_campos_vacios (test_solicitudes.ServicioTests.test_campos_vacios) ... ok\r\ntest_estado_invalido (test_solicitudes.ServicioTests.test_estado_invalido) ... ok\r\ntest_filtro_tipo_sin_distinguir_mayusculas (test_solicitudes.ServicioTests.test_filtro_tipo_sin_distinguir_mayusculas) ... ok\r\ntest_id_inexistente (test_solicitudes.ServicioTests.test_id_inexistente) ... ok\r\ntest_prioridad_invalida (test_solicitudes.ServicioTests.test_prioridad_invalida) ... ok\r\ntest_resumen (test_solicitudes.ServicioTests.test_resumen) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 8 tests in 0.048s\r\n\r\nOK\r\n"
-  },
-  "demo": [
-    {
-      "code": 0,
-      "out": "Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='', estado='pendiente')\r\n",
-      "err": ""
-    },
-    {
-      "code": 0,
-      "out": "[Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='', estado='pendiente')]\r\n",
-      "err": ""
-    },
-    {
-      "code": 0,
-      "out": "Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='Mesa', estado='pendiente')\r\n",
-      "err": ""
-    },
-    {
-      "code": 0,
-      "out": "Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='Mesa', estado='en_revision')\r\n",
-      "err": ""
-    },
-    {
-      "code": 0,
-      "out": "{'en_revision': 1, 'pendiente': 0, 'resuelta': 0, 'total': 1}\r\n",
-      "err": ""
-    }
-  ]
-}
+EVIDENCIA DE EJECUCIÓN - DATOS SINTÉTICOS
+
+> python -m unittest discover -s tests -v
+test_alta_persistencia (test_solicitudes.ServicioTests.test_alta_persistencia) ... ok
+test_asignacion_y_transicion (test_solicitudes.ServicioTests.test_asignacion_y_transicion) ... ok
+test_campos_vacios (test_solicitudes.ServicioTests.test_campos_vacios) ... ok
+test_estado_invalido (test_solicitudes.ServicioTests.test_estado_invalido) ... ok
+test_filtro_tipo_sin_distinguir_mayusculas (test_solicitudes.ServicioTests.test_filtro_tipo_sin_distinguir_mayusculas) ... ok
+test_id_inexistente (test_solicitudes.ServicioTests.test_id_inexistente) ... ok
+test_prioridad_invalida (test_solicitudes.ServicioTests.test_prioridad_invalida) ... ok
+test_resumen (test_solicitudes.ServicioTests.test_resumen) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.046s
+
+OK
+
+> python -m src.solicitudes.cli add --estudiante Ana --tipo Inscripcion --prioridad alta --descripcion Correlativa pendiente
+Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='', estado='pendiente')
+> python -m src.solicitudes.cli list
+[Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='', estado='pendiente')]
+> python -m src.solicitudes.cli assign 1 --responsable Mesa
+Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='Mesa', estado='pendiente')
+> python -m src.solicitudes.cli transition 1 --estado en_revision
+Solicitud(id=1, estudiante='Ana', tipo='Inscripcion', prioridad='alta', descripcion='Correlativa pendiente', responsable='Mesa', estado='en_revision')
+> python -m src.solicitudes.cli report
+{'en_revision': 1, 'pendiente': 0, 'resuelta': 0, 'total': 1}
+
+> git log --oneline --decorate --all -8
+e18e2b7 (HEAD -> main) Ampliar anexo y guion paso a paso
+213a1aa (tag: etapa-docs, tag: estado-refactorizado) Ajustar anexos y tareas de entrega
+d8fcfe0 Documentar tags y publicación del repositorio
+9ceaaac Etapa de documentación: informe y defensa
+34f0b47 (tag: etapa-pruebas) Etapa de pruebas: verificar flujos
+1a85665 (tag: etapa-refactoring) Etapa de refactoring: separar responsabilidades
+ea2a53e (tag: etapa-diagnostico) Etapa de diagnóstico: code smells y riesgos
+87fccb1 (tag: estado-inicial) Estado inicial: prototipo legacy
+
+> git tag --list
+estado-inicial
+estado-refactorizado
+etapa-diagnostico
+etapa-docs
+etapa-pruebas
+etapa-refactoring
